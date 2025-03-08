@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Emmpo</title>
+    <title>LG Design</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="assets/dd34dea82ffd23ec2838.woff" as="font" type="font/woff" crossorigin>
@@ -30,7 +30,8 @@
     <header class="header">
         <div class="header__home header__wrapper active">
             <div class="container header__container">
-                <button type="button" class="header__logo text-hover" aria-label="Home button">
+                <button type="button" class="header__logo text-hover scroll-to" aria-label="Home button" data
+                    data-scroll-to="home">
                     <span class="text-hover__inner">
                         <span class="text-hover__elem text-hover__elem-1">LG DESIGN</span>
                         <span class="text-hover__elem text-hover__elem-2">LG DESIGN</span>
@@ -39,17 +40,10 @@
                 <nav class="header__menu header__menu-home" data-da="body, 960, 0">
                     <div class="header__menu-inner">
                         <button type="button" aria-label="Scroll to section"
-                            class="header__menu-item text-hover scroll-to" data-scroll-to="why">
+                            class="header__menu-item text-hover scroll-to" data-scroll-to="who">
                             <span class="text-hover__inner">
-                                <span class="text-hover__elem text-hover__elem-1">Why?</span>
-                                <span class="text-hover__elem text-hover__elem-2">Why?</span>
-                            </span>
-                        </button>
-                        <button type="button" aria-label="Scroll to section"
-                            class="header__menu-item text-hover scroll-to" data-scroll-to="how">
-                            <span class="text-hover__inner">
-                                <span class="text-hover__elem text-hover__elem-1">How?</span>
-                                <span class="text-hover__elem text-hover__elem-2">How?</span>
+                                <span class="text-hover__elem text-hover__elem-1">Who?</span>
+                                <span class="text-hover__elem text-hover__elem-2">Who?</span>
                             </span>
                         </button>
                         <button type="button" aria-label="Scroll to section"
@@ -60,10 +54,17 @@
                             </span>
                         </button>
                         <button type="button" aria-label="Scroll to section"
-                            class="header__menu-item text-hover scroll-to" data-scroll-to="about">
+                            class="header__menu-item text-hover scroll-to" data-scroll-to="projects">
                             <span class="text-hover__inner">
-                                <span class="text-hover__elem text-hover__elem-1">About us</span>
-                                <span class="text-hover__elem text-hover__elem-2">About us</span>
+                                <span class="text-hover__elem text-hover__elem-1">Projects</span>
+                                <span class="text-hover__elem text-hover__elem-2">Projects</span>
+                            </span>
+                        </button>
+                        <button type="button" aria-label="Scroll to section"
+                            class="header__menu-item text-hover scroll-to" data-scroll-to="insights">
+                            <span class="text-hover__inner">
+                                <span class="text-hover__elem text-hover__elem-1">Insights</span>
+                                <span class="text-hover__elem text-hover__elem-2">Insights</span>
                             </span>
                         </button>
                         <button type="button" aria-label="Scroll to section"
@@ -75,19 +76,18 @@
                         </button>
                     </div>
                     <a href="https://emmpo.calculators.cx/quiz" class="header__menu-btn" target="_blank">Take the
-                        Quiz</a>
+                        Questionaire</a>
                 </nav>
                 <div class="header__container-inner">
                     <button type="button" class="header__btn header__btn-courses text-hover" aria-label="Our courses">
                         <span class="text-hover__inner">
                             <span class="text-hover__elem text-hover__elem-1">
-                                <span class="mobile-hidden">Free</span>
-                                consult
+                                <span class="mobile-hidden">Free consultation</span>
                             </span>
-                            <span class="text-hover__elem text-hover__elem-2">Free consult</span>
+                            <span class="text-hover__elem text-hover__elem-2">Free consultation</span>
                         </span>
                     </button>
-                    <button type="button" class="header__hamburger" aria-label="Hamburger menu">Menu </button>
+                    <button type="button" class="header__hamburger" aria-label="Hamburger menu">Consult </button>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
             </span>
         </a>
     </div>
-    <div class="overflow-hidden">
+    <div class="overflow-hidden" id="home">
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section class="main">
@@ -165,7 +165,7 @@
                                     <span class="main__title-elem animated-main">I help artists and small businesses get
                                         on
                                         the <span class="yellow">map</span> <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="42" height="42" fill="#425847" class="bi bi-geo-alt"
+                                            width="42" height="42" fill="#425847" id="map" class="bi bi-geo-alt"
                                             viewBox="0 0 16 16">
                                             <path
                                                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="career" id="what">
+                <section class="career" id="#">
                     <div class="container">
                         <div class="career__container">
                             <img src="images/navigation-icon.png" alt="Decor" class="career__title-decor">
@@ -218,8 +218,8 @@
                             <p class="career__subheading"></p>
                             <h3 class="career__subheading">
                                 Find ideas you love <br>
-                                <span class="_italic _bold">
-                                    Though our free consultation. <br>
+                                <span>
+                                    Though our <span class="yellow _italic _bold">free consultation.</span> <br>
                                 </span>
                                 But before you do,
                             </h3>
@@ -243,8 +243,13 @@
                         </div>
                     </div>
                 </section>
-                <section class="science">
+                <section class="science" id="who">
                     <div class="container">
+                        <div class="self-portrait__container">
+                            <div class="science__item science__item-5 animated-photo">
+                                <img src="images/self-portrait.png" alt="Image" class="img" data-speed="0.95">
+                            </div>
+                        </div>
                         <h2 class="science__title title animated">
                             The <span class="_c-accent">girl</span>
                             <br>behind the code
@@ -267,7 +272,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="explore" id="why">
+                <section class="explore" id="what">
                     <img src="images/about-2.jpg" alt="Bg" class="explore__bg active">
                     <img src="assets/cd18d61ca7b9aec78be6.png" alt="Bg" class="explore__bg">
                     <img src="assets/8db85a30b1736a08913f.png" alt="Bg" class="explore__bg">
@@ -317,7 +322,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="discover" id="how">
+                <section class="discover" id="#">
                     <img src="images/about-3-trans2.png" alt="Bg" class="explore__bg active">
                     <img src="assets/cd18d61ca7b9aec78be6.png" alt="Bg" class="explore__bg">
                     <img src="assets/8db85a30b1736a08913f.png" alt="Bg" class="explore__bg">
@@ -356,41 +361,146 @@
                 <section class="science">
                     <div class="container">
                         <h2 class="science__title title animated">
-                            The <span class="_c-accent">science</span>
-                            <br>behind the quiz
+                            <span class="_c-accent">Competitive</span>
+                            <br>prices
                         </h2>
                         <div class="science__wrapper col-2">
-                            <p class="science__heading">We leverage a model that is based on</p>
                             <p class="science__text">
-                                vocational psychology research that has been validated in studies repeatedly during the
-                                last 50 years, making it a
+                                I host websites for free though GitHub, which helps lower your annual costs by between
+                                $50-$180 per year. Options like Wix and Squarespace cost around $200-$500 per year,
+                                which add up over time. I offer competitive pricing that will
                                 <span class="_italic _bold">
-                                    scientifically grounded tool <br>for career
+                                    save you
+                                    money in the long run. <br>
                                 </span>
-                                assessment and guidance. 
                             </p>
                         </div>
                         <div class="science__container">
-                            <div class="science__item science__item-1 animated-photo">
-                                <img src="assets/7d73da477e4a14cd5ebf.png" alt="Image" class="img" data-speed="0.95">
-                                <img src="assets/7a485f680df011d1a5cf.png" alt="Heading" class="heading"
-                                    data-speed="0.92">
+                            <div class="science__item-4 animated-photo">
+                                <img src="images/save-money.png" alt="Image" class="img" data-speed="0.95">
                             </div>
-                            <div class="science__item science__item-2 animated-photo">
-                                <img src="assets/2ffd93e449b9c38c6203.png" alt="Image" class="img" data-speed="0.95">
-                                <img src="assets/2589fb691eae19d97926.png" alt="Heading" class="heading"
-                                    data-speed="0.92">
-                                <img src="assets/93a8c42a985ea98e331a.png" alt="Decor" class="decor" data-speed="0.92">
-                            </div>
-                            <div class="science__item science__item-3 animated-photo">
-                                <img src="assets/c0eb7fdf5673f312a5cc.png" alt="Image" class="img" data-speed="0.95">
-                                <img src="assets/27a3c47fc7e52aff4c99.png" alt="Heading" class="heading"
-                                    data-speed="0.92">
+                        </div>
+                </section>
+                <section class="explore" id="#">
+                    <img src="images/about-2.jpg" alt="Bg" class="explore__bg active">
+                    <img src="assets/cd18d61ca7b9aec78be6.png" alt="Bg" class="explore__bg">
+                    <img src="assets/8db85a30b1736a08913f.png" alt="Bg" class="explore__bg">
+                    <img src="assets/9690d9e379e0dba7d893.png" alt="Bg" class="explore__bg">
+                    <img src="assets/04b27a2c53c793038c17.png" alt="Bg" class="explore__bg">
+                    <div class="container">
+                        <h2 class="title explore__title animated">Website Maintenance </h2>
+                        <div class="web-development">
+                            <p class="web-development-text">
+                                All websites change over time. You may need to add articles, update information about
+                                your business, or upload your latest painting.
+                                <span class="_italic _bold">
+                                    I'm here to help when you need it.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="science__container">
+                            <div class="science__item science__item-sub-2 animated-photo">
+                                <img src="images/maintenance.png" alt="Image" class="img" data-speed="0.95">
                             </div>
                         </div>
                     </div>
-                    <img src="assets/ce3c8196da068a1ba841.png" alt="Bg" class="science__bg">
-                    <img src="assets/c1613401b1dc979fd5ba.png" alt="Image" class="science__image">
+                </section>
+                <section class="social">
+                    <div class="container">
+                        <h2 class="social__title title animated">
+                            Recent <br>
+                            <span class="_c-accent">Projects</span>
+                        </h2>
+                    </div>
+                    <div class="social-gallery" id="projects">
+                        <img src="images/recent-projects.png" alt="Recent Projects" class="social-gallery__heading">
+                        <div class="social-gallery__container">
+                            <a href="https://lgwireless23.github.io/deborah-shapiro-art/" target="_blank">
+                                <div class="social-gallery-item-container">
+                                    <div class="social-gallery__item social-gallery__item-1">
+                                        <img src="images/website-1.png" alt="Image" class="social-gallery__img">
+                                        <span class="social-gallery__text">
+                                            An Artist's Website with a masonry gallery.<br>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.twelfthhouseastrology.com/" target="_blank">
+                                <div class="social-gallery-item-container">
+                                    <div class="social-gallery__item social-gallery__item-2">
+                                        <img src="images/website-2.png" alt="Image" class="social-gallery__img">
+                                        <span class="social-gallery__text">
+                                            A Small Business Website that has forms and an integrated e-commerce
+                                            platform.<br>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="social-gallery__item social-gallery__item-3">
+                                <img src="assets/e5a5f7527a35682f0f3c.png" alt="Image" class="social-gallery__img">
+                                <a href="https://emmpo.calculators.cx/quiz" class="social-gallery__link"
+                                    target="_blank">Take
+                                    the Quiz</a>
+                            </div>
+                            <div class="social-gallery__item social-gallery__item-4">
+                                <img src="assets/fa4926cbcadb447bd89d.png" alt="Image" class="social-gallery__img">
+                                <span class="social-gallery__text">
+                                    This will help you make a more informed <br>decision about your future career.
+                                </span>
+                            </div>
+                            <div class="social-gallery__item social-gallery__item-5">
+                                <img src="assets/877390e8023f2471770d.png" alt="Image" class="social-gallery__img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="insights" id="insights">
+                    <div class="container">
+                        <h2 class="insights__title title animated">
+                            <span class="_c-accent">Insights</span>
+                        </h2>
+                    </div>
+                    <div class="insights-gallery">
+                        <img src="images/about-3-bg.png" alt="Recent Projects" class="insights-gallery__heading">
+                        <div class="insights-gallery__container">
+                            <a href="https://lgwireless23.github.io/deborah-shapiro-art/" target="_blank">
+                                <div class="insights-gallery-item-container">
+                                    <div class="insights-gallery__item insights-gallery__item-1">
+                                        <img src="images/website-1.png" alt="Image" class="insights-gallery__img">
+                                        <span class="insights-gallery__text">
+                                            An Artist's Website with a masonry gallery.<br>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.twelfthhouseastrology.com/" target="_blank">
+                                <div class="insights-gallery-item-container">
+                                    <div class="insights-gallery__item insights-gallery__item-2">
+                                        <img src="images/website-2.png" alt="Image" class="insights-gallery__img">
+                                        <span class="insights-gallery__text">
+                                            A Small Business Website that has forms and an integrated e-commerce
+                                            platform.<br>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="insights-gallery__item insights-gallery__item-3">
+                                <img src="assets/e5a5f7527a35682f0f3c.png" alt="Image" class="insights-gallery__img">
+                                <a href="https://emmpo.calculators.cx/quiz" class="insights-gallery__link"
+                                    target="_blank">Take
+                                    the Quiz</a>
+                            </div>
+                            <div class="insights-gallery__item insights-gallery__item-4">
+                                <img src="assets/fa4926cbcadb447bd89d.png" alt="Image" class="insights-gallery__img">
+                                <span class="insights-gallery__text">
+                                    This will help you make a more informed <br>decision about your future career.
+                                </span>
+                            </div>
+                            <div class="insights-gallery__item insights-gallery__item-5">
+                                <img src="assets/877390e8023f2471770d.png" alt="Image" class="insights-gallery__img">
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="person" id="about">
                     <div class="container">
@@ -603,7 +713,8 @@
                             <div class="social-gallery__item social-gallery__item-3">
                                 <img src="assets/e5a5f7527a35682f0f3c.png" alt="Image" class="social-gallery__img">
                                 <a href="https://emmpo.calculators.cx/quiz" class="social-gallery__link"
-                                    target="_blank">Take the Quiz</a>
+                                    target="_blank">Take
+                                    the Quiz</a>
                             </div>
                             <div class="social-gallery__item social-gallery__item-4">
                                 <img src="assets/fa4926cbcadb447bd89d.png" alt="Image" class="social-gallery__img">

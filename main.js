@@ -7593,15 +7593,15 @@
                     }).to(t, {
                         xPercent: -100
                     }).to(".social-gallery__item-1", {
-                        rotate: 7.5
+                        rotate: 0
                     }, "<").to(".social-gallery__item-2", {
-                        rotate: -19.5
+                        rotate: 0
                     }, "<").to(".social-gallery__item-3", {
-                        rotate: 21
+                        rotate: 0
                     }, "<").to(".social-gallery__item-4", {
-                        rotate: 7.5
+                        rotate: 0
                     }, "<").to(".social-gallery__item-5", {
-                        rotate: -14
+                        rotate: 0
                     }, "<")
                 }
                 )),
