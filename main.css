@@ -1625,7 +1625,7 @@ input, textarea {
     }
 
     .main__container {
-        padding-top: 130px;
+        padding-top: calc(100vh*.28)
     }
 
     .main__title {
