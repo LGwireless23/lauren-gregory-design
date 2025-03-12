@@ -3142,6 +3142,7 @@ input, textarea {
     }
 }
 
+<<<<<<< HEAD
 .science__item-5 {
     position: absolute
 }
@@ -3177,6 +3178,8 @@ input, textarea {
     }
 }
 
+=======
+>>>>>>> a888b330aea09af973611b98eae1932987c5609c
 @media only screen and (max-width: 960px) {
     .science {
         padding-top: calc(80px + 120*(100vw - 375px)/584);
