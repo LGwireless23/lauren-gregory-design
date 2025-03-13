@@ -10,10 +10,14 @@
 >>>>>>> a888b330aea09af973611b98eae1932987c5609c
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <link rel="preload" href="fonts/Montreal-Bold.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/Montreal-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="assets/c77ea51aaaf5f15bd55d.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="assets/846faa9c110b840e7cd7.png" as="image" type="image/png" crossorigin>
+    <link rel="preload" href="fonts/Montreal-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montreal-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EditorialNew-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EditorialNew-Ultrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EditorialNew-Ultralight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EditorialNew-UltralightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/EditorialNew-UltraboldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" sizes="192x192" href="assets/688b78c4178800aa2bf8.ico">
     <script defer="defer" src="main.js"></script>
     <link href="main.css" rel="stylesheet">
@@ -163,7 +167,22 @@
             <div id="smooth-content">
                 <section class="main">
                     <div class="container main__container">
-                        <div class="main__title-container">
+                        <div id="mobile-header" class="main__title-container">
+                            <h1 class="main__title">
+                                <span class="main__title-bottom">
+                                    <span class="main__title-elem animated-main">I help <br/> artists and businesses <br/> get
+                                        on <br/> the <span class="yellow">map</span> <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="42" height="42" fill="#425847" id="map" class="bi bi-geo-alt"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                            <path
+                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg></span>
+                                </span>
+                            </h1>
+                        </div>                        
+                        <div id="desktop-header" class="main__title-container">
                             <h1 class="main__title">
                                 <span class="main__title-bottom">
                                     <span class="main__title-elem animated-main">I help artists and small businesses get
