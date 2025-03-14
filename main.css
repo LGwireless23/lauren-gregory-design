@@ -175,18 +175,34 @@ input, textarea, button, select, a {
 }
 
 @font-face {
-    font-family: "Montreal";
+    font-family: "Arial";
     font-style: normal;
     font-weight: 400;
-    src: url() format("woff");
+    src: url(fonts/arial.woff2) format("woff2");
     font-display: swap
 }
 
 @font-face {
-    font-family: "Montreal";
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 400;
+    src: url(fonts/ariali.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Arial";
     font-style: normal;
     font-weight: 700;
-    src: url() format("woff");
+    src: url(fonts/arialbd.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 700;
+    src: url(fonts/arialbi.woff2) format("woff2");
     font-display: swap
 }
 
@@ -239,7 +255,7 @@ body {
     position: relative;
     line-height: 1.2;
     font-weight: 700;
-    font-family: "Montreal", sans-serif;
+    font-family: "Arial", sans-serif;
     color: #131313;
     background-color: #f9f5ec;
     scrollbar-width: 0px
