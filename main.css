@@ -1757,6 +1757,7 @@ input, textarea {
     .main__title-elem {
         font-size: 40px;
         letter-spacing: 0.001em;
+        line-height: .82;
     }
 
     #map {
@@ -1780,13 +1781,13 @@ input, textarea {
     }
 
     .main__title-elem {
-        font-size: 30px;
-        letter-spacing: 0em;
+        font-size: calc(37px + 37*(100vw - 375px)/584);
+        letter-spacing: -.08em;
     }
 
     #map {
-        width: 25px !important;
-        height: 25px !important;
+        width: 32px !important;
+        height: 32px !important;
     }
 
     .main__title {
