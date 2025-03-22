@@ -1184,7 +1184,7 @@ input, textarea {
 }
 
 .footer {
-    background-image: url(assets/0e201813c69b95105df6.png);
+    background-image: url(images/about-2.jpg);
     background-size: cover;
     background-position: center;
     font-weight: 400
@@ -1213,7 +1213,7 @@ input, textarea {
 
 @media only screen and (min-width: 961px) {
     .footer__title {
-        font-size: calc(171.5px + 171.5*(100vw - 960px)/960)
+        font-size: calc(111px + 111*(100vw - 960px)/960)
     }
 }
 
@@ -1231,6 +1231,12 @@ input, textarea {
     position: relative
 }
 
+@media only screen and (min-width: 961px) {
+    .footer__form {
+        margin-top: calc(75px + 75*(100vw - 960px)/960)
+    }
+}
+
 .footer__form-decor {
     position: absolute;
     top: 50%;
@@ -1239,7 +1245,7 @@ input, textarea {
     z-index: 1;
     max-width: none;
     max-height: none;
-    z-index: 1
+    z-index: auto
 }
 
 .footer__form-container {
@@ -1687,8 +1693,8 @@ input, textarea {
     text-transform: uppercase;
     line-height: .8;
     text-align: center;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: calc(100vh*.28);
+    padding-bottom: 140px;
 }
 
 .yellow {
@@ -1742,10 +1748,12 @@ input, textarea {
 }
 
 .main__text {
-    line-height: 1.3;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: -0.02em;
     color: #000;
+    font-weight: 500;
     width: 35%;
 }
 
@@ -1757,7 +1765,6 @@ input, textarea {
     .main__title-elem {
         font-size: 40px;
         letter-spacing: 0.001em;
-        line-height: .82;
     }
 
     #map {
@@ -1781,13 +1788,13 @@ input, textarea {
     }
 
     .main__title-elem {
-        font-size: calc(37px + 37*(100vw - 375px)/584);
-        letter-spacing: -.08em;
+        font-size: 30px;
+        letter-spacing: 0em;
     }
 
     #map {
-        width: 32px !important;
-        height: 32px !important;
+        width: 25px !important;
+        height: 25px !important;
     }
 
     .main__title {
@@ -1802,7 +1809,7 @@ input, textarea {
 
 @media only screen and (min-width: 961px) {
     .main__text {
-        font-size: calc(12px + 12*(100vw - 960px)/960)
+        font-size: calc(15px + 16*(100vw - 960px)/960)
     }
 }
 
@@ -2367,6 +2374,7 @@ input, textarea {
     line-height: 1.05;
     font-family: "Times New Roman";
     font-weight: 300;
+    text-align: left;
 }
 
 @media only screen and (min-width: 961px) {
@@ -2375,22 +2383,28 @@ input, textarea {
     }
 }
 
+.seo {
+    width: calc(500px + 500*(100vw - 960px)/960);
+    margin-left: auto;
+    padding-left: 20px;
+}
+
 .seo-title {
-    color: #f8fe23;
+    color: #425847;
     line-height: .8;
     letter-spacing: -0.06em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    font-size: calc(100px + 100*(100vw - 960px)/960);
+    font-size: calc(120px + 120*(100vw - 960px)/960);
     margin-bottom: calc(165px + 165*(100vw - 960px)/960)
 }
 
 
 @media only screen and (min-width: 961px) {
     .seo-title {
-        font-size: calc(80px + 80*(100vw - 960px)/960);
-        margin-bottom: calc(205px + 205*(100vw - 960px)/960)
+        font-size: calc(96px + 96*(100vw - 960px)/960);
+        margin-bottom: calc(80px + 80*(100vw - 960px)/960)
     }
 }
 
@@ -2403,22 +2417,22 @@ input, textarea {
 }
 
 .seo-text {
+    position: relative;
+    z-index: 10;
     color: #000;
-    font-weight: 200;
+    font-weight: 300;
     font-family: "Times New Roman";
-    line-height: 1;
-    letter-spacing: -0.04em
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 @media only screen and (min-width: 961px) {
     .seo-text {
         width: calc(480px + 480*(100vw - 960px)/960);
         margin-left: auto;
-        margin-right: auto;
-        font-size: calc(32px + 48*(100vw - 375px)/584);
-        margin-bottom: calc(40px + 60*(100vw - 375px)/584);
-        font-size: calc(40px + 40*(100vw - 960px)/960);
-        margin-bottom: calc(40px + 40*(100vw - 960px)/960)
+        font-size: calc(21px + 21*(100vw - 960px)/960);
+        margin-bottom: calc(0px + 0*(100vw - 960px)/960)
     }
 }
 
@@ -2434,7 +2448,7 @@ input, textarea {
 
 @media only screen and (min-width: 961px) {
     .science__item-sub-2 {
-        bottom: calc(-30px + -30*(100vw - 960px)/960)
+        bottom: calc(-20px + -20*(100vw - 960px)/960)
     }
 }
 
@@ -2444,7 +2458,33 @@ input, textarea {
 
 @media only screen and (min-width: 961px) {
     .science__item-sub-2 .img {
-        width: calc(228px + 228*(100vw - 960px)/960)
+        width: calc(180px + 180*(100vw - 960px)/960)
+    }
+}
+
+.science__item-sub-3 {
+    position: absolute
+}
+
+@media only screen and (min-width: 961px) {
+    .science__item-sub-3 {
+        right: calc(75px + 75*(100vw - 960px)/960)
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .science__item-sub-3 {
+        bottom: calc(0px + 0*(100vw - 960px)/960)
+    }
+}
+
+.science__item-sub-3 .img {
+    transform: rotate(-12deg)
+}
+
+@media only screen and (min-width: 961px) {
+    .science__item-sub-3 .img {
+        width: calc(180px + 180*(100vw - 960px)/960)
     }
 }
 
@@ -2689,20 +2729,21 @@ input, textarea {
 }
 
 .discover__subtitle {
+    font-family: "Times New Roman";
     letter-spacing: -0.04em;
     line-height: .95;
-    font-weight: 700
+    font-weight: 400
 }
 
 @media only screen and (min-width: 961px) {
     .discover__subtitle {
-        font-size: calc(22.5px + 22.5*(100vw - 960px)/960)
+        font-size: calc(28px + 28*(100vw - 960px)/960)
     }
 }
 
 @media only screen and (min-width: 961px) {
     .discover__subtitle {
-        margin-bottom: calc(30px + 30*(100vw - 960px)/960)
+        margin-bottom: calc(100px + 100*(100vw - 960px)/960)
     }
 }
 
@@ -2739,7 +2780,7 @@ input, textarea {
 
 @media only screen and (min-width: 961px) {
     .discover__caption {
-        margin-bottom: calc(150px + 150*(100vw - 960px)/960)
+        margin-bottom: calc(0px + 0*(100vw - 960px)/960)
     }
 }
 
@@ -2753,6 +2794,8 @@ input, textarea {
 @media only screen and (min-width: 961px) {
     .discover__container {
         gap: calc(20px + 20*(100vw - 960px)/960);
+        margin-bottom: calc(30px + 30*(100vw - 960px)/960);
+        margin-right: calc(190px + 190*(100vw - 960px)/960)
     }
 }
 
@@ -3176,7 +3219,7 @@ input, textarea {
     }
 }
 
-<<<<<<< HEAD .science__item-5 {
+.science__item-5 {
     position: absolute
 }
 
@@ -3211,7 +3254,7 @@ input, textarea {
     }
 }
 
-=======>>>>>>>a888b330aea09af973611b98eae1932987c5609c @media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
     .science {
         padding-top: calc(80px + 120*(100vw - 375px)/584);
         padding-bottom: calc(80px + 120*(100vw - 375px)/584)
