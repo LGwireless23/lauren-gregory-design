@@ -1764,7 +1764,6 @@ input, textarea {
 
     .main__title-elem {
         font-size: 40px;
-        letter-spacing: 0.001em;
     }
 
     #map {
@@ -1779,6 +1778,8 @@ input, textarea {
 
     .main__title-bottom {
         width: 70%;
+        letter-spacing: -0.03em;
+        line-height: .85;
     }
 }
 
@@ -2298,7 +2299,7 @@ input, textarea {
     }
 
     .career__heading {
-        font-size: calc(38px + 57*(100vw - 375px)/584);
+        font-size: calc(38px + 38*(100vw - 375px)/584);
         margin-bottom: calc(70px + 105*(100vw - 375px)/584)
     }
 
